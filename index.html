@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-	<html lang="en">
+	<html lang="en" id="background1">
 
-	<head>
+	<head >
+		<link rel="stylesheet" href="styles.css">
     	<meta charset="UTF-8">
     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<title>Tech Returners Surgery: Home</title>
+    	<title class="color=">Tech Returners Surgery: Home</title>
 		</head>
 
 	<body>
 		<h1>
-			<a href="#">Tech Returners Surgery</a>
-			<a href="tel:03330509138">0333 050 9138</a>
+			<a href="#"><span class="highlight">Tech Returners Surgery</span></a>
+			<a href="tel:03330509138"><span class="highlight">0333 050 9138</span></a>
 		</h1>
 
 		<nav>
@@ -24,17 +25,17 @@
 			</ul>
 		</nav>
 
-		<label for="site-search">Search...</label>
+		<label for="site-search"><strong>Search...</strong></label>
 		<input type="search" id="site-search" name="search" aria-label="Search through site content">
-		<button>Search</button>
+		<button class = "submit-button">Search</button>
 
-		<section>
-			<h3><strong>COVID Restriction Update</strong></h3>
+		<section class="text-spacing">
+			<h3 id="grad"><em>COVID Restriction Update</em></h3>
 
 			<p>Throughout the pandemic we have strove to make the surgery as safe as possible for all our patients and
 				staff, we will continue to do so.</p>
 
-			<p>From the <strong>19th July 2021 nothing will change at the Surgery</strong> Patients will <mark>still
+			<p>From the <mark>19th July 2021 nothing will change at the Surgery</mark> Patients will <mark>still
 					need</mark> to
 				wear a mask, socially distance and use hand sanitiser in the surgery and staff will continue to
 				wear PPE.
@@ -49,7 +50,7 @@
 
 			<img src="./surgery.png" alt="Image of the Surgery">
 
-			<p> The Tech Returners Surgery,<br>
+			<p class="text-spacing", > The Tech Returners Surgery,<br>
 				115 Mancunian Way,<br>
 				Manchester,<br>
 				M20 3PX
@@ -73,12 +74,12 @@
 		<section>
 			<h2>Need advice or have some feedback for us?</h2>
 
-			<form>
+			<form id="background">
 				<fieldset>
-					<legend>Send us a message by filling out the form below and one of our Receptionists will be in touch:
+					<legend  id="para1">Send us a message by filling out the form below and one of our Receptionists will be in touch:
 					</legend>
 
-					<p>Are you completing this form on behalf of: </p>
+					<p  id="para2">Are you completing this form on behalf of: </p>
 
 					<label for="self">Yourself </label>
 					<input type="checkbox" id="self" name="self">
@@ -117,7 +118,7 @@
 						<input type="text" id="message" name="message" required>
 					</div>
 
-					<input type="submit" value="Submit">
+					<input type="submit" class = "submit-button" value="Submit">
 				</fieldset>
 			</form>
 		</section>
