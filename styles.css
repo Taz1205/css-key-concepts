@@ -8,7 +8,7 @@
   --button-color: white;
   --img-border: indianred;
   --div-border-color: chartreuse;
-  --body-width: 80%;
+  --body-width: 100%;
   --body-max-width: 40rem;
   --img-max-width: 40rem;
   --nav-padding: 0.75rem;
@@ -278,4 +278,27 @@ h3 {
 }
 ul {
   border: inherit;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  display: inline;
+  margin-right: 1rem; /* Adds some space between the menu items */
+}
+
+nav li a {
+  text-decoration: underline;
+  color: var(--main-color);
+  padding: var(--nav-padding);
+  display: inline-block;
+}
+
+nav li a.active {
+  color: var(--secondary-color);
+  font-weight: bold;
 }
