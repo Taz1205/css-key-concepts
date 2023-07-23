@@ -1,11 +1,5 @@
 :root {
   --main-font: "intro_head_rbase";
-  --secondary-font: "intro_rust_gbase_2_line";
-  --tertiary-font: "seasideresortnfregular";
-  --quaternary-font: "alex_brushregular";
-  --font-size-large: 24px;
-  --font-size-medium: 16px;
-  --font-size-small: 15px;
   --highlight-bg: red;
   --highlight-animation-duration: 4s;
   --main-color: rgb(30, 30, 29);
@@ -15,86 +9,21 @@
   --img-border: indianred;
   --div-border-color: chartreuse;
   --body-width: 80%;
-  --body-max-width: 800px;
-  --img-max-width: 800px;
-  --nav-padding: 15px;
-  --button-padding: 15px 32px;
-  --button-font-size: 16px;
-  --button-margin: 4px 2px;
-  --button-border-radius: 10px;
-  --highlight-width-height: 100px;
-  --h1-text-shadow: 5px 5px 10px indigo;
-  --text-spacing-letter-spacing: 5px;
-  --p-font-size: 30px;
+  --body-max-width: 40rem;
+  --img-max-width: 40rem;
+  --nav-padding: 0.75rem;
+  --button-padding: 0.75rem 1.6rem;
+  --button-font-size: 0.8rem;
+  --button-margin: 0.2rem 0.1rem;
+  --button-border-radius: 0.5rem;
+  --highlight-width-height: 5rem;
+  --h1-text-shadow: 0.25rem 0.25rem 0.5rem indigo;
+  --text-spacing-letter-spacing: 0.25rem;
+  --p-font-size: 1.5rem;
   --label-color: rgb(255, 0, 144);
-}
-
-body {
-  width: var(--body-width);
-  max-width: var(--body-max-width);
-  margin: 0 auto;
-}
-
-img {
-  max-width: var(--img-max-width);
-  max-height: max-content;
-  border: 5px solid var(--img-border);
-}
-
-nav {
-  box-shadow: 0px 0px 15px currentcolor;
-  border: 5px solid currentcolor;
-  padding: var(--nav-padding);
-  color: var(--secondary-color);
-  font-weight: bold;
-}
-
-button {
-  background-color: var(--button-bg);
-  border: rgb(30, 30, 29);
-  color: var(--button-color);
-  padding: var(--button-padding);
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: var(--button-font-size);
-  margin: var(--button-margin);
-  cursor: pointer;
-  border-radius: var(--button-border-radius);
-}
-
-.highlight {
-  width: var(--highlight-width-height);
-  height: var(--highlight-width-height);
-  background-color: var(--highlight-bg);
-  position: relative;
-  animation-name: example;
-  animation-duration: var(--highlight-animation-duration);
-  animation-iteration-count: 2;
-  animation-direction: alternate;
-}
-
-h1 {
-  font-family: "intro_rust_gbase_2_line";
-  font-size: var(--h1-font-size);
-  font-weight: bold;
-  text-shadow: var(--h1-text-shadow);
-}
-
-.text-spacing {
-  letter-spacing: var(--text-spacing-letter-spacing);
-  font-weight: bold;
-}
-
-p {
-  font-family: "alex_brushregular", red-serif;
-  font-style: bold;
-  font-size: var(--p-font-size);
-}
-
-label {
-  font-style: bold;
-  color: var(--label-color);
+  --font-size-large: 1.2rem;
+  --font-size-medium: 0.8rem;
+  --font-size-small: 0.75rem;
 }
 
 @font-face {
@@ -175,12 +104,12 @@ a {
 img {
   max-width: var(--img-max-width);
   max-height: max-content;
-  border: 5px solid var(--img-border);
+  border: 0.25rem solid var(--img-border);
 }
 
 nav {
-  box-shadow: 0px 0px 15px currentcolor;
-  border: 5px solid currentcolor;
+  box-shadow: 0px 0px 0.75rem currentcolor;
+  border: 0.25rem solid currentcolor;
   padding: var(--nav-padding);
   color: var(--secondary-color);
   font-weight: bold;
@@ -200,12 +129,8 @@ button {
   border-radius: var(--button-border-radius);
 }
 
-ul {
-  border: inherit;
-}
-
 div {
-  border: 2px dashed var(--div-border-color);
+  border: 0.1rem dashed var(--div-border-color);
 }
 
 .highlight {
@@ -217,6 +142,24 @@ div {
   animation-duration: var(--highlight-animation-duration);
   animation-iteration-count: 2;
   animation-direction: alternate;
+}
+
+h1 {
+  font-family: var(--secondary-font);
+  font-size: var(--font-size-large);
+  font-weight: bold;
+  text-shadow: var(--h1-text-shadow);
+}
+
+.text-spacing {
+  letter-spacing: var(--text-spacing-letter-spacing);
+  font-weight: bold;
+}
+
+p {
+  font-family: var(--quaternary-font), red-serif;
+  font-style: bold;
+  font-size: var(--p-font-size);
 }
 
 @keyframes example {
@@ -247,13 +190,6 @@ div {
   }
 }
 
-h1 {
-  font-family: var(--secondary-font);
-  font-size: var(--font-size-large);
-  font-weight: bold;
-  text-shadow: var(--h1-text-shadow);
-}
-
 .text-spacing {
   letter-spacing: var(--text-spacing-letter-spacing);
   font-weight: bold;
@@ -264,12 +200,6 @@ h2 {
   font-size: var(--font-size-large);
   font-weight: bold;
   text-decoration: overline;
-}
-
-p {
-  font-family: var(--quaternary-font), red-serif;
-  font-style: bold;
-  font-size: var(--p-font-size);
 }
 
 label {
@@ -345,4 +275,7 @@ h3 {
     url(Images/purple_image.png);
   background-position: right top, left top, left top;
   background-repeat: no-repeat, no-repeat, repeat;
+}
+ul {
+  border: inherit;
 }
